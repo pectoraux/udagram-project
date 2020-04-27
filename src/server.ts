@@ -31,7 +31,7 @@ import Jimp from 'jimp';
 
   /**************************************************************************** */
 
-  app.get('/filteredimage', async (req, res) => {
+  app.get('/filteredimage', async (req: Request, res: Response) => {
     const url: string = req.query.image_url;
     
     if (!url) {
